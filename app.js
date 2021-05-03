@@ -8,16 +8,15 @@ const PORT = 4000
 
 app.use(express.static("public"));
 
-router.get("/home", (request, response) => {
+router.get("/", (request, response) => {
     console.log("GET request on /home route");
-    console.log(__dirname);
     return response.sendFile(path.join(__dirname, "/views/home.html"));
   });
 
 
 router.get("/about", (request, response) => {
   console.log("GET request on /about route");
-  console.log(__dirname);
+  
   return response.sendFile(path.join(__dirname, "/views/about.html"));
 });
 
