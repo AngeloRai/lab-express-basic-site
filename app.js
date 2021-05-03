@@ -4,6 +4,8 @@ const router = require("express").Router();
 
 const app = express();
 
+const PORT = 4000
+
 app.use(express.static("public"));
 
 router.get("/home", (request, response) => {
@@ -32,4 +34,4 @@ router.get("/photos", (request, response) => {
 app.use("/", router);
 
 
-app.listen(4000, () => console.log("Server is up and running at port 4000"));
+app.listen(PORT, () => console.log(`Server up and running at port ${PORT}`));

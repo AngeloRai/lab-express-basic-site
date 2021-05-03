@@ -55,3 +55,15 @@ ul li:nth-child(even):hover {
     transform: perspective(200px) rotateY(-45deg);
     padding-right: 5%;
 }
+
+.photos {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.photos img {
+    width: 400px;
+    margin: 10px;
+}
